@@ -44,7 +44,7 @@
                     <br />
                     <textarea id="orderSummary" name="orderSummary" rows="15" cols="60"></textarea>
                     <br/>
-                    <button type="submit">Submit Order</button>
+                    <button type="submit" id="submit">Submit Order</button>
                     <button type="reset">Clear Order Form</button>
                 </form>
             </section>
@@ -53,7 +53,7 @@
     </main>
     <script>
         const orderForm = document.getElementById("order-form");
-        orderForm.addEventListener("click", (e) => {
+        orderForm.addEventListener("submit", (e) => {
             e.preventDefault();
             alert("This form would email you.");
         })
