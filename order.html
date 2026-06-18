@@ -44,13 +44,20 @@
                     <br />
                     <textarea id="orderSummary" name="orderSummary" rows="15" cols="60"></textarea>
                     <br/>
-                    <button>Sumbit Order</button>
+                    <button type="submit">Submit Order</button>
                     <button type="reset">Clear Order Form</button>
                 </form>
             </section>
         </div>
 
     </main>
+    <script>
+        const orderForm = document.getElementById("order-form");
+        orderForm.addEventListener("click", (e) => {
+            e.preventDefault();
+            alert("This form would email you.");
+        })
+    </script>
 
 </body>
 
