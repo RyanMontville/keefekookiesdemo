@@ -1,0 +1,164 @@
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;900&display=swap");
+
+:root {
+    --pink: #ed65b9;
+    --light-pink: #ffd4fd;
+    --orange: #f4c048;
+    --blue: #58a3ff;
+    --body-background: #f6f3f7ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--body-background);
+    font-size: 30px;
+    font-family: "Roboto Slab", serif;
+}
+
+header {
+    background-color: var(--blue);
+    height: 200px;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--pink);
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+#nav-cat {
+    height: 100px;
+    position: absolute;
+    bottom: 24px;
+    left: 10px;
+    z-index: 2;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    margin: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    color: #234166;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+main h1,
+main h2,
+main h3,
+main h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+main p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.about-logo {
+    width: 300px;
+    float: right;
+}
+
+#posts-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post {
+    max-width: 300px;
+    margin: 10px;
+}
+.caption {
+    font-size: 15px;
+}
+.post-img {
+    max-width: 300px;
+}
+@media only screen and (max-width: 815px) {
+}
+
+hr {
+    margin: 40px 0 20px 0;
+}
+
+#form-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+form input,
+form textarea {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#order-instructions,
+#order-form {
+    width: 45%;
+}
+
+li {
+    margin-left: 40px;
+}
+
+#cookies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (min-width: 646px) {
+    #name {
+        height: 100px;
+        margin: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    #cookies img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 645px) {
+    header {
+        height: 200px;
+        padding-top: 10px;
+    }
+    #name {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    #cookies img {
+        width: 150px;
+    }
+}

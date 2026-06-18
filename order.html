@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keefe Kookies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/name.png" id="name" />
+        <img src="images/nav-cat.png" id="nav-cat" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="order.html">Order</a>
+            <a href="https://www.instagram.com/keefekookies">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        <div id="form-wrapper">
+            <section id="order-instructions">
+                <h2>Order Something Sweet!</h2>
+                <p>This is the order page. You can add how orders work and all that here. The form will send you an
+                    email.</p>
+            </section>
+            <section id="order-form">
+                <form>
+                    <label for="customerName">Name:</label>
+                    <input type="text" name="customerName" id="customerName" />
+                    <br />
+                    <label for="costumerEmail">Email:</label>
+                    <input type="email" name="costumerEmail" id="costumerEmail" />
+                    <br />
+                    <label for="costumerPhone">Phone Number:</label>
+                    <input type="tel" name="costumerPhone" id="costumerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="###-###-####" />
+                    <br />
+                    <label for="orderSummary">What would you like to order:</label>
+                    <br />
+                    <textarea id="orderSummary" name="orderSummary" rows="15" cols="60"></textarea>
+                    <br/>
+                    <button>Sumbit Order</button>
+                    <button type="reset">Clear Order Form</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
